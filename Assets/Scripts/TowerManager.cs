@@ -32,6 +32,7 @@ public class TowerManager : MonoBehaviour
             {
                 if (hit.collider.tag == "BuildPlace")
                 {
+        Debug.Log("1");
                     buildTile = hit.collider;
                     buildTile.tag = "BuildPlaceFull";
                     RegisterBuildPlace(buildTile);
@@ -48,6 +49,7 @@ public class TowerManager : MonoBehaviour
     }
     public void RegisterBuildPlace(Collider2D other)
     {
+        Debug.Log("register");
         BuildList.Add(other);
     }
     public void RenameTagsBuildPlace()
@@ -72,6 +74,7 @@ public class TowerManager : MonoBehaviour
     }
     public void placeTower(RaycastHit2D hit)
     {
+        Debug.Log("place");
         if(!EventSystem.current.IsPointerOverGameObject() && towerBtnPressed != null)
         {
             GameObject newTower = Instantiate(towerBtnPressed.TowerObject);

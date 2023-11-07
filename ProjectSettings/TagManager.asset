@@ -5,9 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - WP
-  - BuildPlace
   - BuildPlaceFull
   - Enemy
+  - BuildPlace
   layers:
   - Default
   - TransparentFX
