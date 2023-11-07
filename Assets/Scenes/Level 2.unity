@@ -1431,16 +1431,16 @@ MonoBehaviour:
   - {fileID: 9187679390415096627, guid: 775dc55944246b74ab352fee26132921, type: 3}
   - {fileID: 2743322611710415400, guid: d4ff93b50b951ed45943af2c0880e375, type: 3}
   - {fileID: 3666419443738394019, guid: df844a2482a9aae48ae89b86be8701f6, type: 3}
-  maxEnemiesOnScreen: 8
+  maxEnemiesOnScreen: 100
   enemiesOnScreen: 0
   totalEnemies: 0
   enemiesPerSpawn: 1
   currentGold: 9999
   goldText: {fileID: 6581423}
-  maxWave: 100
+  maxWave: 10
   currentWave: 0
   CurrentWaveText: {fileID: 1627352806}
-  maxHealth: 100
+  maxHealth: 5
   currentHealth: 0
   CurrentHealthText: {fileID: 1552285060}
   winWindow: {fileID: 164284670}
@@ -6806,11 +6806,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5623568424650610578, guid: b18c99f8ac2cfe44b899aa421cc9e038, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.12
+      value: -2.34
       objectReference: {fileID: 0}
     - target: {fileID: 5623568424650610578, guid: b18c99f8ac2cfe44b899aa421cc9e038, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.13
+      value: -2.29
       objectReference: {fileID: 0}
     - target: {fileID: 5623568424650610578, guid: b18c99f8ac2cfe44b899aa421cc9e038, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6973,11 +6973,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 742994858607601097, guid: af691485c694c9b419b2b00363f1315a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.49
+      value: -3.4
       objectReference: {fileID: 0}
     - target: {fileID: 742994858607601097, guid: af691485c694c9b419b2b00363f1315a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.75
+      value: -1.84
       objectReference: {fileID: 0}
     - target: {fileID: 742994858607601097, guid: af691485c694c9b419b2b00363f1315a, type: 3}
       propertyPath: m_LocalPosition.z
