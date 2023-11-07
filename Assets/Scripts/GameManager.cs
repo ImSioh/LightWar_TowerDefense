@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public int nextSceneToLoad;
     public float waitingTime;
     public GameObject spawnPoint;
+    public GameObject spawnPoint1;
     public GameObject[] enemies;
     public int maxEnemiesOnScreen;
     public int enemiesOnScreen;
@@ -41,8 +42,8 @@ public class GameManager : MonoBehaviour
         if (currentWave < maxWave && enemiesOnScreen==0 )
         {
             currentWave++;
-            totalEnemies++;
-            maxEnemiesOnScreen++;
+            totalEnemies+=2;
+            maxEnemiesOnScreen+=2;
             waitingTime -= 0.1f;
             StartCoroutine(Spawn());
         }
@@ -81,7 +82,9 @@ public class GameManager : MonoBehaviour
                 {
                     GameObject newEnemy = Instantiate(enemies[Random.Range(0,4)] as GameObject);
                     newEnemy.transform.position = spawnPoint.transform.position;
-                    enemiesOnScreen++;
+                    GameObject newEnemy1 = Instantiate(enemies[Random.Range(4, 8)] as GameObject);
+                    newEnemy1.transform.position = spawnPoint1.transform.position;
+                    enemiesOnScreen+=2;
                 }
             }
             yield return new WaitForSeconds(waitingTime);
