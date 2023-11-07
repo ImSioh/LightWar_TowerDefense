@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public int nextSceneToLoad;
     public float waitingTime;
     public GameObject spawnPoint;
-    public GameObject spawnPoint1;
+    public GameObject? spawnPoint1;
     public GameObject[] enemies;
     public int maxEnemiesOnScreen;
     public int enemiesOnScreen;
