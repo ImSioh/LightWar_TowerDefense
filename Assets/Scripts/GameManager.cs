@@ -42,8 +42,16 @@ public class GameManager : MonoBehaviour
         if (currentWave < maxWave && enemiesOnScreen==0 )
         {
             currentWave++;
-            totalEnemies+=2;
-            maxEnemiesOnScreen+=2;
+            if(spawnPoint1 == null)
+            {
+                totalEnemies ++;
+                maxEnemiesOnScreen ++;
+            }
+            else
+            {
+                totalEnemies += 2;
+                maxEnemiesOnScreen += 2;
+            }
             waitingTime -= 0.1f;
             StartCoroutine(Spawn());
         }
@@ -82,9 +90,16 @@ public class GameManager : MonoBehaviour
                 {
                     GameObject newEnemy = Instantiate(enemies[Random.Range(0,4)] as GameObject);
                     newEnemy.transform.position = spawnPoint.transform.position;
-                    GameObject newEnemy1 = Instantiate(enemies[Random.Range(4, 8)] as GameObject);
-                    newEnemy1.transform.position = spawnPoint1.transform.position;
-                    enemiesOnScreen+=2;
+                    if(spawnPoint1 != null)
+                    {
+                        GameObject newEnemy1 = Instantiate(enemies[Random.Range(4, 8)] as GameObject);
+                        newEnemy1.transform.position = spawnPoint1.transform.position;
+                        enemiesOnScreen += 2;
+                    }
+                    else
+                    {
+                        enemiesOnScreen++;
+                    }
                 }
             }
             yield return new WaitForSeconds(waitingTime);
