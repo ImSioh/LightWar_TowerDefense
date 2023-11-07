@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532dd7c0dac100949bccbda600d84bca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 3825373389008584162, guid: 6bbfcb34dab639747b5520003b0afccd, type: 3}
+  bullet: {fileID: 3065835743540301273, guid: 9bc97b2c709f2c642bfb360749f35b62, type: 3}
   firePoints:
   - {fileID: 8975414265590138909}
   shotPerSeconds: 1
