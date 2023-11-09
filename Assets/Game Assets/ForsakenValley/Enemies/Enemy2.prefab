@@ -463,12 +463,5 @@ MonoBehaviour:
   wayPoints:
   - {fileID: 5623568424650610578, guid: b18c99f8ac2cfe44b899aa421cc9e038, type: 3}
   - {fileID: 742994858607601097, guid: af691485c694c9b419b2b00363f1315a, type: 3}
-  - {fileID: 4394543209018216329, guid: b3690c5d7d91314428fbaf69d3f97a34, type: 3}
-  - {fileID: 4464008957482457695, guid: 0225202b643b286439cfefb3f4798d61, type: 3}
-  - {fileID: 746610506041792849, guid: ad032d3b43769824981228733e646545, type: 3}
-  - {fileID: 6354785088083800208, guid: d45deee76d215a64fa4754cb9617a144, type: 3}
-  - {fileID: 5659066694373100935, guid: 0a61f45c21f61fb4bb73ab14c1454fd4, type: 3}
-  - {fileID: 2916676678344881493, guid: 55b9aaf889ee5b945967400e42a7bc0f, type: 3}
-  - {fileID: 2398823345532731222, guid: 985dbae3ad1c85e4fa8c1b988c66d3bd, type: 3}
   navTimeUpdate: 0
   currentNavTime: 0

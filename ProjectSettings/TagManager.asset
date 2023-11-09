@@ -48,3 +48,6 @@ TagManager:
   - name: building
     uniqueID: 861175145
     locked: 0
+  - name: tower
+    uniqueID: 347253015
+    locked: 0

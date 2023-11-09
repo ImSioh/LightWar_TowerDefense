@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: e611ff6824b9e8d4583e42d7184a5d82
+  - enabled: 1
+    path: Assets/Game Assets/StormCloudTemple/Scenes/StormcloundTemple.unity
+    guid: 4f81f865dd232e648a90c80af8cca32b
   m_configObjects: {}

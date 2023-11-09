@@ -35,6 +35,7 @@ public class Enemy : MonoBehaviour
                     else
                     {
                         enemy.position = Vector2.MoveTowards(enemy.position, exitPoint.position, currentNavTime);
+                        Debug.Log(exitPoint.position + " " + currentNavTime);
                     }
                     currentNavTime = 0;
                 }
