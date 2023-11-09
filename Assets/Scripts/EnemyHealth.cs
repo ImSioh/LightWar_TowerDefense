@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class EnemyHealth : MonoBehaviour
     public int goldToGive;
     public GameObject hitEffect;
     public GameObject splash;
+    public Image healthBar;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +28,7 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
+        healthBar.fillAmount = currentHealth/maxHealth;
         anim.SetTrigger("Hurt");
         GameObject obj = Instantiate(hitEffect,transform.position,transform.rotation);
         Destroy(obj,.5f);

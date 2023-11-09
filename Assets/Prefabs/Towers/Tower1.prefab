@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.085036, y: -0.35791886, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2660879844298697001}
@@ -100,10 +100,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532dd7c0dac100949bccbda600d84bca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 3825373389008584162, guid: 6bbfcb34dab639747b5520003b0afccd, type: 3}
+  bullet: {fileID: 5479955168698118154, guid: ca426016ac090184d950b793ab1dd413, type: 3}
   firePoints:
   - {fileID: 2660879844298697001}
-  shotPerSeconds: 1
+  shotPerSeconds: 3
   level: 1
   maxLevel: 3
   upgradeCost: 20
@@ -315,7 +315,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.07420015, y: 0.07822573}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -326,7 +326,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.5, y: 3.5}
+  m_Size: {x: 2.8419232, y: 3.015094}
   m_EdgeRadius: 0
 --- !u!1 &6695249340673541679
 GameObject:

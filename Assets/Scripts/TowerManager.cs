@@ -30,6 +30,7 @@ public class TowerManager : MonoBehaviour
             //If something was hit, the RaycastHit2D.collider will not be null
             if (hit)
             {
+                Debug.Log("aa");
                 if (hit.collider.tag == "BuildPlace")
                 {
                     buildTile = hit.collider;
@@ -88,7 +89,7 @@ public class TowerManager : MonoBehaviour
     }
     public void SelectedTower(TowerButton towerButton)
     {
-        if(towerButton.TowerPrice <= GameManager.instance.currentGold)
+        if (towerButton.TowerPrice <= GameManager.instance.currentGold)
         {
             towerBtnPressed = towerButton;
             EnabledragSprite(towerButton.DragSprite);
