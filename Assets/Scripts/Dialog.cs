@@ -15,12 +15,10 @@ public class Dialog : MonoBehaviour
     void Start()
     {
         Time.timeScale = 0f;
-        // GameSpeed.instance.gameObject.SetActive(false);
         textComponent.text = string.Empty;
         StartDialogue();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -65,7 +63,6 @@ public class Dialog : MonoBehaviour
         else
         {
             Time.timeScale = 1f;
-            // GameSpeed.instance.gameObject.SetActive(true);
             panelUI.SetActive(false);
         }
     }
