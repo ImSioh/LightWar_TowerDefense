@@ -1,38 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Game_Manager : MonoBehaviour
 {
-	public static Game_Manager instance;
-	public float waitingTime = 1;
-	public GameObject spawnPoint;
-	public GameObject[] enemies;
-	public int maxEnemiesOnScreen;
-	public int enemiesOnScreen;
-	public int totalEnemies;
-	public int enemiesPerSpawn;
+    public static Game_Manager instance;
+    public int nextSceneToLoad;
+    public float waitingTime;
+    public GameObject spawnPoint;
+    public GameObject[] enemies;
+    public int maxEnemiesOnScreen;
+    public int enemiesOnScreen;
+    public int totalEnemies;
+    public int enemiesPerSpawn;
+    public int currentGold;
+    public Text goldText;
+    public int maxWave;
+    public int currentWave = 1;
+    public Text CurrentWaveText;
+    public int maxHealth = 3;
+    public int currentHealth;
+    public Text CurrentHealthText;
+    public GameObject winWindow;
+    public GameObject loseWindow;
 
-	public float minSpawnInterval = 0.0f;
+    public float minSpawnInterval = 0.0f;
 	public float maxSpawnInterval = 2.0f;
 	private float nextSpawnTime;
-	//public int currentGold;
-	//public Text goldText;
-	//public int maxWave;
-	//public int currentWave = 1;
-	//public Text CurrentWaveText;
-	//public int maxHealth = 3;
-	//public int currentHealth;
-	//public Text CurrentHealthText;
-	//public GameObject winWindow;
-	//public GameObject loseWindow;
-
 
 	private void Awake()
 	{
 		instance = this;
-		//currentHealth = maxHealth;
-		//nextSceneToLoad = SceneManager.GetActiveScene().buildIndex + 1;
+		currentHealth = maxHealth;
+		nextSceneToLoad = SceneManager.GetActiveScene().buildIndex + 1;
 	}
 
 	void Start()
@@ -46,27 +48,26 @@ public class Game_Manager : MonoBehaviour
 	{
 		if (Time.time >= nextSpawnTime)
 		{
-			SpawnRandomObject();
-			CalculateNextSpawnTime();
-		}
 
-		//goldText.text = currentGold.ToString();
-		//CurrentWaveText.text = currentWave.ToString() + "/" + maxWave.ToString();
-		//CurrentHealthText.text = currentHealth.ToString() + "/" + maxHealth.ToString();
-		//if (currentWave < maxWave && enemiesOnScreen == 0)
-		//{
-		//	currentWave++;
-		//	totalEnemies++;
-		//	maxEnemiesOnScreen++;
-		//	waitingTime -= 0.1f;
-		//	StartCoroutine(Spawn());
-		//}                                                                                                                                                                                
-		//else if (currentWave == maxWave && enemiesOnScreen == 0)
-		//{
-		//	winWindow.SetActive(true);
-		//	StopAllCoroutines();
-		//}
-	}
+		goldText.text = currentGold.ToString();
+		CurrentWaveText.text = currentWave.ToString() + "/" + maxWave.ToString();
+		CurrentHealthText.text = currentHealth.ToString() + "/" + maxHealth.ToString();
+		if (currentWave < maxWave && enemiesOnScreen == 0)
+		{
+			currentWave++;
+			totalEnemies++;
+			maxEnemiesOnScreen++;
+			waitingTime -= 0.1f;
+            SpawnRandomObject();
+            CalculateNextSpawnTime();
+        }
+		else if (currentWave == maxWave && enemiesOnScreen == 0)
+		{
+			winWindow.SetActive(true);
+            }
+
+        }
+    }
 
 	private void CalculateNextSpawnTime()
 	{
@@ -112,39 +113,39 @@ public class Game_Manager : MonoBehaviour
 	//}
 
 
-	//public void AddGold(int amount)
-	//{
-	//	currentGold += amount;
-	//}
-	//public void ReduceGold(int amount)
-	//{
-	//	currentGold -= amount;
-	//}
-	//public void PlayerGetDamage()
-	//{
-	//	currentHealth--;
-	//	if (currentHealth <= 0)
-	//	{
-	//		loseWindow.SetActive(true);
-	//		currentHealth = 0;
-	//	}
-	//}
+	public void AddGold(int amount)
+	{
+		currentGold += amount;
+	}
+	public void ReduceGold(int amount)
+	{
+		currentGold -= amount;
+	}
+	public void PlayerGetDamage()
+	{
+		currentHealth--;
+		if (currentHealth <= 0)
+		{
+			loseWindow.SetActive(true);
+			currentHealth = 0;
+		}
+	}
 
-	//public void NextLevel()
-	//{
-	//	SceneManager.LoadScene(nextSceneToLoad);
-	//	if (nextSceneToLoad > PlayerPrefs.GetInt("levelAt"))
-	//	{
-	//		PlayerPrefs.SetInt("levelAt", nextSceneToLoad);
-	//	}
-	//}
-	//public void ReplyLevel()
-	//{
-	//	SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-	//}
-	//public void MainMenu()
-	//{
-	//	SceneManager.LoadScene(0);
-	//}
+	public void NextLevel()
+	{
+		SceneManager.LoadScene(nextSceneToLoad);
+		if (nextSceneToLoad > PlayerPrefs.GetInt("levelAt"))
+		{
+			PlayerPrefs.SetInt("levelAt", nextSceneToLoad);
+		}
+	}
+	public void ReplyLevel()
+	{
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+	}
+	public void MainMenu()
+	{
+		SceneManager.LoadScene(0);
+	}
 
 }

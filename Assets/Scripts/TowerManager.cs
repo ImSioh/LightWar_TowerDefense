@@ -30,9 +30,9 @@ public class TowerManager : MonoBehaviour
             //If something was hit, the RaycastHit2D.collider will not be null
             if (hit)
             {
+                Debug.Log("aa");
                 if (hit.collider.tag == "BuildPlace")
                 {
-        Debug.Log("1");
                     buildTile = hit.collider;
                     buildTile.tag = "BuildPlaceFull";
                     RegisterBuildPlace(buildTile);
@@ -49,7 +49,6 @@ public class TowerManager : MonoBehaviour
     }
     public void RegisterBuildPlace(Collider2D other)
     {
-        Debug.Log("register");
         BuildList.Add(other);
     }
     public void RenameTagsBuildPlace()
@@ -74,7 +73,6 @@ public class TowerManager : MonoBehaviour
     }
     public void placeTower(RaycastHit2D hit)
     {
-        Debug.Log("place");
         if(!EventSystem.current.IsPointerOverGameObject() && towerBtnPressed != null)
         {
             GameObject newTower = Instantiate(towerBtnPressed.TowerObject);
@@ -91,7 +89,7 @@ public class TowerManager : MonoBehaviour
     }
     public void SelectedTower(TowerButton towerButton)
     {
-        if(towerButton.TowerPrice <= GameManager.instance.currentGold)
+        if (towerButton.TowerPrice <= GameManager.instance.currentGold)
         {
             towerBtnPressed = towerButton;
             EnabledragSprite(towerButton.DragSprite);

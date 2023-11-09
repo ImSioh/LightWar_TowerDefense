@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     public int currentHealth;
     public Text CurrentHealthText;
     public GameObject winWindow;
-    public GameObject loseWindow;
+    public GameObject loseWindow; 
     private void Awake()
     {
         instance = this;

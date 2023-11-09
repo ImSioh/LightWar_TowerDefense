@@ -20,7 +20,8 @@ public class PausedMenu : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Escape))
         {
-            if(isPaused) {
+            if (isPaused)
+            {
                 ResumeGame();
             }
             {
@@ -31,9 +32,10 @@ public class PausedMenu : MonoBehaviour
 
     public void PauseGame()
     {
-        pauseMenu.SetActive(true);
-        Time.timeScale = 0f;
         isPaused = true;
+        pauseMenu.SetActive(true);
+        Time.timeScale = 0.0f;
+        
     }
 
     public void ResumeGame()
