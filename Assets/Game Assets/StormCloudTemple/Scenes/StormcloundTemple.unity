@@ -8849,10 +8849,10 @@ MonoBehaviour:
   enemiesPerSpawn: 1
   currentGold: 100
   goldText: {fileID: 1018147372}
-  maxWave: 5
+  maxWave: 7
   currentWave: 0
   CurrentWaveText: {fileID: 1260350630}
-  maxHealth: 15
+  maxHealth: 10
   currentHealth: 0
   CurrentHealthText: {fileID: 1814723551}
   winWindow: {fileID: 2053641955}

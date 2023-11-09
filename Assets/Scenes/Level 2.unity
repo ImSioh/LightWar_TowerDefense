@@ -1438,7 +1438,7 @@ MonoBehaviour:
   enemiesPerSpawn: 2
   currentGold: 150
   goldText: {fileID: 6581423}
-  maxWave: 7
+  maxWave: 10
   currentWave: 0
   CurrentWaveText: {fileID: 1627352806}
   maxHealth: 20

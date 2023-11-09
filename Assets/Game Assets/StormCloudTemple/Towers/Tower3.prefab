@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.1505811, y: 0.95605046, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8975414265590138909}
@@ -124,7 +124,7 @@ MonoBehaviour:
   bullet: {fileID: 8016739448615246102, guid: 401e7624dee2af54faed14be1d46be33, type: 3}
   firePoints:
   - {fileID: 8975414265590138909}
-  shotPerSeconds: 2.5
+  shotPerSeconds: 2
   level: 1
   maxLevel: 3
   upgradeCost: 30
