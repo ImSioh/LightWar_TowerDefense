@@ -160,7 +160,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.042111874, y: 0.18248445}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -171,7 +171,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.5, y: 3.5}
+  m_Size: {x: 5.5842237, y: 4.089565}
   m_EdgeRadius: 0
 --- !u!1 &5398866173571639321
 GameObject:
@@ -352,7 +352,7 @@ MonoBehaviour:
   bullet: {fileID: 4847264067201222514, guid: bf88662b37ff21941b805f46124cf5f3, type: 3}
   firePoints:
   - {fileID: 4779587758416566079}
-  shotPerSeconds: 1
+  shotPerSeconds: 2
   level: 1
   maxLevel: 3
   upgradeCost: 25

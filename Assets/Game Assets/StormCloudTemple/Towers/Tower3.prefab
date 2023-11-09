@@ -124,7 +124,7 @@ MonoBehaviour:
   bullet: {fileID: 8016739448615246102, guid: 401e7624dee2af54faed14be1d46be33, type: 3}
   firePoints:
   - {fileID: 8975414265590138909}
-  shotPerSeconds: 1
+  shotPerSeconds: 2.5
   level: 1
   maxLevel: 3
   upgradeCost: 30
@@ -329,7 +329,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.00000023841858, y: 0.08986235}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -340,7 +340,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.5, y: 3.5}
+  m_Size: {x: 6.084104, y: 4.982726}
   m_EdgeRadius: 0
 --- !u!114 &3723966839588831483
 MonoBehaviour:

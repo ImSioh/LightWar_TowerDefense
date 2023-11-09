@@ -583,6 +583,7 @@ MonoBehaviour:
   nextSceneToLoad: 0
   waitingTime: 2
   spawnPoint: {fileID: 962460802}
+  spawnPoint1: {fileID: 0}
   enemies:
   - {fileID: 1999091872622135772, guid: d355f4dc233852744a62d86939b0e4f5, type: 3}
   - {fileID: 9187679390415096627, guid: 42091ec543b865440b975e5d47865d7d, type: 3}
@@ -5347,11 +5348,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7622170228210246481, guid: 553324b425285cc428c24dac873765d8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.88
+      value: 6.02
       objectReference: {fileID: 0}
     - target: {fileID: 7622170228210246481, guid: 553324b425285cc428c24dac873765d8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.29
+      value: 3.92
       objectReference: {fileID: 0}
     - target: {fileID: 7622170228210246481, guid: 553324b425285cc428c24dac873765d8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5693,11 +5694,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1619419910531501266, guid: d7e69f5712baa3140b1f79877614b9a5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.77
+      value: -1.9
       objectReference: {fileID: 0}
     - target: {fileID: 1619419910531501266, guid: d7e69f5712baa3140b1f79877614b9a5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.67
+      value: 4.35
       objectReference: {fileID: 0}
     - target: {fileID: 1619419910531501266, guid: d7e69f5712baa3140b1f79877614b9a5, type: 3}
       propertyPath: m_LocalPosition.z

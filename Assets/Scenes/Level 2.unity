@@ -1420,7 +1420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneToLoad: 0
-  waitingTime: 1
+  waitingTime: 1.5
   spawnPoint: {fileID: 1433654091}
   spawnPoint1: {fileID: 323772654}
   enemies:
@@ -1434,14 +1434,14 @@ MonoBehaviour:
   - {fileID: 3666419443738394019, guid: df844a2482a9aae48ae89b86be8701f6, type: 3}
   maxEnemiesOnScreen: 100
   enemiesOnScreen: 0
-  totalEnemies: 0
-  enemiesPerSpawn: 1
-  currentGold: 9999
+  totalEnemies: 2
+  enemiesPerSpawn: 2
+  currentGold: 150
   goldText: {fileID: 6581423}
-  maxWave: 10
+  maxWave: 7
   currentWave: 0
   CurrentWaveText: {fileID: 1627352806}
-  maxHealth: 5
+  maxHealth: 20
   currentHealth: 0
   CurrentHealthText: {fileID: 1552285060}
   winWindow: {fileID: 164284670}

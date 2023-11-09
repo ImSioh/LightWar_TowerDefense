@@ -264,10 +264,10 @@ GameObject:
   - component: {fileID: 660218565546891396}
   - component: {fileID: 7489670821844365104}
   - component: {fileID: 8161176960552102880}
-  - component: {fileID: -3757408860935624131}
   - component: {fileID: -3079574130108819831}
   - component: {fileID: 4086005492248917760}
-  - component: {fileID: 7897642421169572829}
+  - component: {fileID: 2497682420078860936}
+  - component: {fileID: 1161306677808679276}
   m_Layer: 6
   m_Name: Enemy2 1
   m_TagString: Enemy
@@ -364,26 +364,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-3757408860935624131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9187679390415096627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 009f708ce9ec60b4694f1859f944c663, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 8161176960552102880}
-  currentHealth: 50
-  maxHealth: 50
-  isDead: 0
-  goldToGive: 20
-  hitEffect: {fileID: 3386620822577180068, guid: 6b1c610771baa64468597647b14a4c12, type: 3}
-  splash: {fileID: 1096161928141884686, guid: 5268695ecca04814f8ddcd1ff3fea97c, type: 3}
-  healthBar: {fileID: 1081902732189366683}
 --- !u!50 &-3079574130108819831
 Rigidbody2D:
   serializedVersion: 4
@@ -446,7 +426,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.7114385, y: -0.15809774}
   m_Size: {x: 1.4285382, y: 2.6933165}
   m_Direction: 0
---- !u!114 &7897642421169572829
+--- !u!114 &2497682420078860936
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -455,7 +435,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 9187679390415096627}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a945cf7ff331de9489e3d291a222bc3a, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c10a7053e418f14693bc69ddf135efe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 8161176960552102880}
+  currentHealth: 100
+  maxHealth: 100
+  isDead: 0
+  goldToGive: 27
+  hitEffect: {fileID: 3386620822577180068, guid: 6b1c610771baa64468597647b14a4c12, type: 3}
+  splash: {fileID: 1096161928141884686, guid: 5268695ecca04814f8ddcd1ff3fea97c, type: 3}
+  healthBar: {fileID: 1081902732189366683}
+--- !u!114 &1161306677808679276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9187679390415096627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f2ed427131850e4e83debcbf74ea3a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: 0

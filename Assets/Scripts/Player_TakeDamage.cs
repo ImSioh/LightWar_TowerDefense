@@ -6,10 +6,10 @@ public class Player_TakeDamage : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.GetComponent<EnemyHealth>() != null)
+        if (other.gameObject.GetComponent<Enemy_Health>() != null)
         {
             Game_Manager.instance.PlayerGetDamage();
-            EnemyHealth _enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
+            Enemy_Health _enemyHealth = other.gameObject.GetComponent<Enemy_Health>();
             _enemyHealth.Destroy();
 
         }
