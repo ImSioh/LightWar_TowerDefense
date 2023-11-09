@@ -144,7 +144,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0251832, y: -0.032883644}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -155,7 +155,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.5, y: 3.5}
+  m_Size: {x: 4.397376, y: 4.11907}
   m_EdgeRadius: 0
 --- !u!114 &4631714968523455319
 MonoBehaviour:
@@ -278,7 +278,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.76361346, y: 2.817507, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4779587758416566079}
@@ -373,7 +373,7 @@ MonoBehaviour:
   bullet: {fileID: 2819931800723661747, guid: f2e63aa3c53c059478370ce03435fcc1, type: 3}
   firePoints:
   - {fileID: 4779587758416566079}
-  shotPerSeconds: 1
+  shotPerSeconds: 1.6
   level: 1
   maxLevel: 3
   upgradeCost: 25

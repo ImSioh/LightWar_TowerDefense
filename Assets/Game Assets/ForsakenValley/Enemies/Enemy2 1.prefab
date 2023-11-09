@@ -377,10 +377,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 8161176960552102880}
-  currentHealth: 50
-  maxHealth: 50
+  currentHealth: 100
+  maxHealth: 100
   isDead: 0
-  goldToGive: 20
+  goldToGive: 27
   hitEffect: {fileID: 3386620822577180068, guid: 6b1c610771baa64468597647b14a4c12, type: 3}
   splash: {fileID: 1096161928141884686, guid: 5268695ecca04814f8ddcd1ff3fea97c, type: 3}
   healthBar: {fileID: 5560131467640205748}

@@ -335,7 +335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerObject: {fileID: 5996734181716729675, guid: cccd115c8930cb14bbf311f282a261c9, type: 3}
   dragSprite: {fileID: 21300000, guid: 0a4f1f3e74cce5f419cdccd1f352d739, type: 3}
-  towerPrice: 50
+  towerPrice: 25
 --- !u!114 &48845228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -835,7 +835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerObject: {fileID: 1117175686138612482, guid: a3307bf9ce7e8a24d8b324b76784a6de, type: 3}
   dragSprite: {fileID: 21300000, guid: f702f31b9e3c16946bae340e645431ae, type: 3}
-  towerPrice: 100
+  towerPrice: 35
 --- !u!114 &311029130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1420,7 +1420,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextSceneToLoad: 0
-  waitingTime: 1
+  waitingTime: 1.5
   spawnPoint: {fileID: 1433654091}
   spawnPoint1: {fileID: 323772654}
   enemies:
@@ -1434,14 +1434,14 @@ MonoBehaviour:
   - {fileID: 3666419443738394019, guid: df844a2482a9aae48ae89b86be8701f6, type: 3}
   maxEnemiesOnScreen: 100
   enemiesOnScreen: 0
-  totalEnemies: 0
-  enemiesPerSpawn: 1
-  currentGold: 9999
+  totalEnemies: 2
+  enemiesPerSpawn: 2
+  currentGold: 150
   goldText: {fileID: 6581423}
   maxWave: 10
   currentWave: 0
   CurrentWaveText: {fileID: 1627352806}
-  maxHealth: 5
+  maxHealth: 20
   currentHealth: 0
   CurrentHealthText: {fileID: 1552285060}
   winWindow: {fileID: 164284670}
@@ -4514,7 +4514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerObject: {fileID: 3853034218105157791, guid: 49f93fc2fe84e654cb1bc807211823b9, type: 3}
   dragSprite: {fileID: 21300000, guid: 639f948c6e19e2d41af67f66a7c70329, type: 3}
-  towerPrice: 30
+  towerPrice: 20
 --- !u!114 &1572598837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4742,7 +4742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerObject: {fileID: 1186659717438989523, guid: 18ddb7d6f908b344ea70011a275a1293, type: 3}
   dragSprite: {fileID: 21300000, guid: 6ec25cf9293d16643bbb19bcc39da323, type: 3}
-  towerPrice: 75
+  towerPrice: 30
 --- !u!114 &1624989450
 MonoBehaviour:
   m_ObjectHideFlags: 0

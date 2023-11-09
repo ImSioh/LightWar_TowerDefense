@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.085036, y: -0.35791886, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2660879844298697001}
@@ -121,10 +121,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 967a9c1beb079264fb24b85166fcf3e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: -164285324674819865, guid: 0950c655e5d9406429253bf2d30c6ebc, type: 3}
+  bullet: {fileID: 7346497076838024490, guid: c7821cbca1f0844498356269755a048a, type: 3}
   firePoints:
   - {fileID: 2660879844298697001}
-  shotPerSeconds: 1
+  shotPerSeconds: 3
   level: 1
   maxLevel: 3
   upgradeCost: 20
@@ -298,7 +298,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.06386423, y: -0.032883048}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -309,7 +309,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.5, y: 3.5}
+  m_Size: {x: 2.3680477, y: 2.5135086}
   m_EdgeRadius: 0
 --- !u!114 &3794625722069933005
 MonoBehaviour:

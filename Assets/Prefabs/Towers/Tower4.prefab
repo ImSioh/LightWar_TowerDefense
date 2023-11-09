@@ -100,10 +100,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 532dd7c0dac100949bccbda600d84bca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 5479955168698118154, guid: ca426016ac090184d950b793ab1dd413, type: 3}
+  bullet: {fileID: 3825373389008584162, guid: 6bbfcb34dab639747b5520003b0afccd, type: 3}
   firePoints:
   - {fileID: 4121814437101639719}
-  shotPerSeconds: 1
+  shotPerSeconds: 1.6
   level: 1
   maxLevel: 3
   upgradeCost: 35
@@ -602,7 +602,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.14037275, y: 0.3910048}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -613,5 +613,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.5, y: 3.5}
+  m_Size: {x: 7.3529177, y: 6.5922723}
   m_EdgeRadius: 0
